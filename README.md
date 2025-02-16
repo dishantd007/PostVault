@@ -1,7 +1,7 @@
 # PostVault
 This is an iOS application built using Swift, following the MVVM architecture pattern. It demonstrates the use of Realm-Swift for local storage, Alamofire for networking, and RxSwift/RxCocoa for reactive programming, Unit Test Cases.
 
-# iOS MVVM Assessment App
+# iOS MVVM/RxSwift Assessment App
 
 ## Overview
 This is an iOS application built using **Swift**, following the **MVVM architecture pattern**. It demonstrates the use of **Realm-Swift for local storage**, **Alamofire for networking**, and **RxSwift/RxCocoa for reactive programming**, **Unit Test cases**.
@@ -48,8 +48,8 @@ The app consists of two screens:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/repository-name.git
-   cd repository-name
+   git clone https://github.com/your-username/PostVault.git
+   cd PostVault
    ```
 2. Install dependencies using CocoaPods:
    ```bash
@@ -61,7 +61,14 @@ The app consists of two screens:
 ---
 
 ## Screenshots
-_(Add screenshots here to showcase the UI)_
+![Simulator Screenshot - iPhone 15 - 2025-02-16 at 17 17 52](https://github.com/user-attachments/assets/b9c7340e-e6fe-4b17-be5f-2a7ef07d1369)
+![Simulator Screenshot - iPhone 15 - 2025-02-16 at 17 17 43](https://github.com/user-attachments/assets/b51a89ef-9a09-4623-bb89-76fd111768e8)
+![Simulator Screenshot - iPhone 15 - 2025-02-16 at 17 17 29](https://github.com/user-attachments/assets/d3b75ede-d218-4dc9-9bb5-69c071e20c96)
+![Simulator Screenshot - iPhone 15 - 2025-02-16 at 16 14 33](https://github.com/user-attachments/assets/cc50e89b-6acd-4eea-999d-12a794f7c747)
+![Simulator Screenshot - iPhone 15 - 2025-02-16 at 16 14 01](https://github.com/user-attachments/assets/f27cd7cc-0f42-411e-9cd1-2ead1106a6cb)
+![Simulator Screenshot - iPhone 15 - 2025-02-15 at 07 57 40](https://github.com/user-attachments/assets/57b6e0a2-536f-42d6-9488-bd2ce6069dc1)
+![Simulator Screenshot - iPhone 15 - 2025-02-16 at 17 18 19](https://github.com/user-attachments/assets/75607f9f-5862-45f6-965e-7b9ffb46293c)
+![Simulator Screenshot - iPhone 15 - 2025-02-16 at 17 18 03](https://github.com/user-attachments/assets/d1cb1366-a8b5-4ca8-918b-c37ae7c7b6b0)
 
 ---
 
