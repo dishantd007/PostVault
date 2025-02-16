@@ -1,0 +1,6 @@
+framework module Pods_PostVault_PostVaultUITests {
+  umbrella header "Pods-PostVault-PostVaultUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

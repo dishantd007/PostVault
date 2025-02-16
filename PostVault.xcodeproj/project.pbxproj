@@ -1,0 +1,988 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		192FFE907E672F75191E55FD /* Pods_PostVault.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 58A99EFB58CC4AEE3BEE1F82 /* Pods_PostVault.framework */; };
+		8FEDC934E579F22AAAC654EA /* Pods_PostVaultTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701B60CA551B051AD9761386 /* Pods_PostVaultTests.framework */; };
+		E4226A662D5F5F0400AF6BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226A652D5F5F0400AF6BE5 /* AppDelegate.swift */; };
+		E4226A682D5F5F0400AF6BE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226A672D5F5F0400AF6BE5 /* SceneDelegate.swift */; };
+		E4226A6D2D5F5F0400AF6BE5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E4226A6C2D5F5F0400AF6BE5 /* Base */; };
+		E4226A6F2D5F5F0500AF6BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4226A6E2D5F5F0500AF6BE5 /* Assets.xcassets */; };
+		E4226A722D5F5F0500AF6BE5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E4226A712D5F5F0500AF6BE5 /* Base */; };
+		E4226A7D2D5F5F0600AF6BE5 /* PostVaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226A7C2D5F5F0600AF6BE5 /* PostVaultTests.swift */; };
+		E4226A872D5F5F0600AF6BE5 /* PostVaultUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226A862D5F5F0600AF6BE5 /* PostVaultUITests.swift */; };
+		E4226A892D5F5F0600AF6BE5 /* PostVaultUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226A882D5F5F0600AF6BE5 /* PostVaultUITestsLaunchTests.swift */; };
+		E4226A9B2D5F610700AF6BE5 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226A9A2D5F610700AF6BE5 /* Post.swift */; };
+		E4226A9D2D5F611500AF6BE5 /* PostRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226A9C2D5F611500AF6BE5 /* PostRealmModel.swift */; };
+		E4226A9F2D5F615500AF6BE5 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226A9E2D5F615500AF6BE5 /* APIService.swift */; };
+		E4226AA12D5F617500AF6BE5 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226AA02D5F617500AF6BE5 /* DatabaseService.swift */; };
+		E4226AA32D5F619300AF6BE5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226AA22D5F619300AF6BE5 /* Constants.swift */; };
+		E4226AA52D5F61A600AF6BE5 /* UIApplication+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226AA42D5F61A600AF6BE5 /* UIApplication+Extensions.swift */; };
+		E4226AA82D5F622100AF6BE5 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4226AA72D5F622100AF6BE5 /* LoginViewController.xib */; };
+		E4226AA92D5F622100AF6BE5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226AA62D5F622100AF6BE5 /* LoginViewController.swift */; };
+		E4226AB12D5F634100AF6BE5 /* PostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226AB02D5F634100AF6BE5 /* PostViewModel.swift */; };
+		E4226AB32D5F63AB00AF6BE5 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226AB22D5F63AB00AF6BE5 /* LoginViewModel.swift */; };
+		E4226AB52D5F658000AF6BE5 /* UserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226AB42D5F658000AF6BE5 /* UserSessionManager.swift */; };
+		E4226ABD2D5F679100AF6BE5 /* PostsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4226ABC2D5F679100AF6BE5 /* PostsViewController.xib */; };
+		E4226ABE2D5F679200AF6BE5 /* PostsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226ABB2D5F679100AF6BE5 /* PostsViewController.swift */; };
+		E4226AC22D5F67B100AF6BE5 /* FavoritesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4226AC12D5F67B100AF6BE5 /* FavoritesViewController.xib */; };
+		E4226AC32D5F67B100AF6BE5 /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226AC02D5F67B100AF6BE5 /* FavoritesViewController.swift */; };
+		E4226ACB2D5F68F200AF6BE5 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4226ACA2D5F68F200AF6BE5 /* PostTableViewCell.xib */; };
+		E4226ACC2D5F68F200AF6BE5 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226AC92D5F68F200AF6BE5 /* PostTableViewCell.swift */; };
+		E4226ACF2D5F737A00AF6BE5 /* MainTabBarController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4226ACE2D5F737A00AF6BE5 /* MainTabBarController.xib */; };
+		E4226AD02D5F737A00AF6BE5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226ACD2D5F737A00AF6BE5 /* MainTabBarController.swift */; };
+		E445C75E2D60C0D9002CC70A /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445C75D2D60C0D9002CC70A /* UIViewController+Extension.swift */; };
+		E445C7602D61EE6C002CC70A /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445C75F2D61EE6C002CC70A /* UIView+Extensions.swift */; };
+		E445C7622D61FFA0002CC70A /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445C7612D61FFA0002CC70A /* UITableView+Extension.swift */; };
+		E445C7642D620256002CC70A /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445C7632D620256002CC70A /* NetworkMonitor.swift */; };
+		E445C7662D620E35002CC70A /* PostViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445C7652D620E35002CC70A /* PostViewModelTests.swift */; };
+		E445C76C2D620F2C002CC70A /* MockAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445C7682D620EB7002CC70A /* MockAPIService.swift */; };
+		E445C76D2D620F30002CC70A /* MockDatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445C76A2D620ED1002CC70A /* MockDatabaseService.swift */; };
+		E445C7702D6216A7002CC70A /* MockUserSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445C76F2D6216A7002CC70A /* MockUserSessionManager.swift */; };
+		E445C7722D6216D5002CC70A /* LoginViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E445C7712D6216D5002CC70A /* LoginViewModelTests.swift */; };
+		E4FADACE2D5F813A00F4E5E3 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FADACD2D5F813A00F4E5E3 /* Comment.swift */; };
+		E4FADAD02D5F829600F4E5E3 /* CommentRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4FADACF2D5F829600F4E5E3 /* CommentRealmModel.swift */; };
+		E56B8FB04864D8A235C28E94 /* Pods_PostVault_PostVaultUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC964156FFC91E79F4ABC64C /* Pods_PostVault_PostVaultUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4226A792D5F5F0600AF6BE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4226A5A2D5F5F0400AF6BE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4226A612D5F5F0400AF6BE5;
+			remoteInfo = PostVault;
+		};
+		E4226A832D5F5F0600AF6BE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E4226A5A2D5F5F0400AF6BE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4226A612D5F5F0400AF6BE5;
+			remoteInfo = PostVault;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DD4119647FD0E5F24A47977 /* Pods-PostVaultTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostVaultTests.debug.xcconfig"; path = "Target Support Files/Pods-PostVaultTests/Pods-PostVaultTests.debug.xcconfig"; sourceTree = "<group>"; };
+		58A99EFB58CC4AEE3BEE1F82 /* Pods_PostVault.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostVault.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		701B60CA551B051AD9761386 /* Pods_PostVaultTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostVaultTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C31201AE3F6037FBDBFBA934 /* Pods-PostVault.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostVault.release.xcconfig"; path = "Target Support Files/Pods-PostVault/Pods-PostVault.release.xcconfig"; sourceTree = "<group>"; };
+		DAE4D1F1BD0B385FC4DF163C /* Pods-PostVault-PostVaultUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostVault-PostVaultUITests.debug.xcconfig"; path = "Target Support Files/Pods-PostVault-PostVaultUITests/Pods-PostVault-PostVaultUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E4226A622D5F5F0400AF6BE5 /* PostVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4226A652D5F5F0400AF6BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E4226A672D5F5F0400AF6BE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E4226A6C2D5F5F0400AF6BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E4226A6E2D5F5F0500AF6BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E4226A712D5F5F0500AF6BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E4226A732D5F5F0500AF6BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4226A782D5F5F0600AF6BE5 /* PostVaultTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostVaultTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4226A7C2D5F5F0600AF6BE5 /* PostVaultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVaultTests.swift; sourceTree = "<group>"; };
+		E4226A822D5F5F0600AF6BE5 /* PostVaultUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PostVaultUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4226A862D5F5F0600AF6BE5 /* PostVaultUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVaultUITests.swift; sourceTree = "<group>"; };
+		E4226A882D5F5F0600AF6BE5 /* PostVaultUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVaultUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E4226A9A2D5F610700AF6BE5 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		E4226A9C2D5F611500AF6BE5 /* PostRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRealmModel.swift; sourceTree = "<group>"; };
+		E4226A9E2D5F615500AF6BE5 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		E4226AA02D5F617500AF6BE5 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		E4226AA22D5F619300AF6BE5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E4226AA42D5F61A600AF6BE5 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		E4226AA62D5F622100AF6BE5 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		E4226AA72D5F622100AF6BE5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		E4226AB02D5F634100AF6BE5 /* PostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModel.swift; sourceTree = "<group>"; };
+		E4226AB22D5F63AB00AF6BE5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		E4226AB42D5F658000AF6BE5 /* UserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSessionManager.swift; sourceTree = "<group>"; };
+		E4226ABB2D5F679100AF6BE5 /* PostsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsViewController.swift; sourceTree = "<group>"; };
+		E4226ABC2D5F679100AF6BE5 /* PostsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsViewController.xib; sourceTree = "<group>"; };
+		E4226AC02D5F67B100AF6BE5 /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		E4226AC12D5F67B100AF6BE5 /* FavoritesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesViewController.xib; sourceTree = "<group>"; };
+		E4226AC92D5F68F200AF6BE5 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		E4226ACA2D5F68F200AF6BE5 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		E4226ACD2D5F737A00AF6BE5 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		E4226ACE2D5F737A00AF6BE5 /* MainTabBarController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTabBarController.xib; sourceTree = "<group>"; };
+		E445C75D2D60C0D9002CC70A /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		E445C75F2D61EE6C002CC70A /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		E445C7612D61FFA0002CC70A /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		E445C7632D620256002CC70A /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		E445C7652D620E35002CC70A /* PostViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewModelTests.swift; sourceTree = "<group>"; };
+		E445C7682D620EB7002CC70A /* MockAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIService.swift; sourceTree = "<group>"; };
+		E445C76A2D620ED1002CC70A /* MockDatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDatabaseService.swift; sourceTree = "<group>"; };
+		E445C76E2D621539002CC70A /* PostVault.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PostVault.entitlements; sourceTree = "<group>"; };
+		E445C76F2D6216A7002CC70A /* MockUserSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserSessionManager.swift; sourceTree = "<group>"; };
+		E445C7712D6216D5002CC70A /* LoginViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModelTests.swift; sourceTree = "<group>"; };
+		E4FADACD2D5F813A00F4E5E3 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		E4FADACF2D5F829600F4E5E3 /* CommentRealmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRealmModel.swift; sourceTree = "<group>"; };
+		EC964156FFC91E79F4ABC64C /* Pods_PostVault_PostVaultUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PostVault_PostVaultUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2C5EABAEBAE9BDF7A28153D /* Pods-PostVault.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostVault.debug.xcconfig"; path = "Target Support Files/Pods-PostVault/Pods-PostVault.debug.xcconfig"; sourceTree = "<group>"; };
+		F5364576C0FD8EFF13412708 /* Pods-PostVaultTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostVaultTests.release.xcconfig"; path = "Target Support Files/Pods-PostVaultTests/Pods-PostVaultTests.release.xcconfig"; sourceTree = "<group>"; };
+		F59FCB41DD586DC232E1EF3F /* Pods-PostVault-PostVaultUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PostVault-PostVaultUITests.release.xcconfig"; path = "Target Support Files/Pods-PostVault-PostVaultUITests/Pods-PostVault-PostVaultUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E4226A5F2D5F5F0400AF6BE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				192FFE907E672F75191E55FD /* Pods_PostVault.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4226A752D5F5F0600AF6BE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8FEDC934E579F22AAAC654EA /* Pods_PostVaultTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4226A7F2D5F5F0600AF6BE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E56B8FB04864D8A235C28E94 /* Pods_PostVault_PostVaultUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4EBBAB2954740BCCAB3D3326 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				58A99EFB58CC4AEE3BEE1F82 /* Pods_PostVault.framework */,
+				EC964156FFC91E79F4ABC64C /* Pods_PostVault_PostVaultUITests.framework */,
+				701B60CA551B051AD9761386 /* Pods_PostVaultTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DEAD8639F49891025A89450 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2C5EABAEBAE9BDF7A28153D /* Pods-PostVault.debug.xcconfig */,
+				C31201AE3F6037FBDBFBA934 /* Pods-PostVault.release.xcconfig */,
+				DAE4D1F1BD0B385FC4DF163C /* Pods-PostVault-PostVaultUITests.debug.xcconfig */,
+				F59FCB41DD586DC232E1EF3F /* Pods-PostVault-PostVaultUITests.release.xcconfig */,
+				0DD4119647FD0E5F24A47977 /* Pods-PostVaultTests.debug.xcconfig */,
+				F5364576C0FD8EFF13412708 /* Pods-PostVaultTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E4226A592D5F5F0400AF6BE5 = {
+			isa = PBXGroup;
+			children = (
+				E4226A642D5F5F0400AF6BE5 /* PostVault */,
+				E4226A7B2D5F5F0600AF6BE5 /* PostVaultTests */,
+				E4226A852D5F5F0600AF6BE5 /* PostVaultUITests */,
+				E4226A632D5F5F0400AF6BE5 /* Products */,
+				7DEAD8639F49891025A89450 /* Pods */,
+				4EBBAB2954740BCCAB3D3326 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E4226A632D5F5F0400AF6BE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E4226A622D5F5F0400AF6BE5 /* PostVault.app */,
+				E4226A782D5F5F0600AF6BE5 /* PostVaultTests.xctest */,
+				E4226A822D5F5F0600AF6BE5 /* PostVaultUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E4226A642D5F5F0400AF6BE5 /* PostVault */ = {
+			isa = PBXGroup;
+			children = (
+				E445C76E2D621539002CC70A /* PostVault.entitlements */,
+				E4226A952D5F606700AF6BE5 /* Models */,
+				E4226A962D5F606F00AF6BE5 /* ViewModels */,
+				E4226A972D5F607B00AF6BE5 /* Views */,
+				E4226A982D5F608400AF6BE5 /* Services */,
+				E4226A992D5F609000AF6BE5 /* Utils */,
+				E4226A652D5F5F0400AF6BE5 /* AppDelegate.swift */,
+				E4226A672D5F5F0400AF6BE5 /* SceneDelegate.swift */,
+				E4226A6B2D5F5F0400AF6BE5 /* Main.storyboard */,
+				E4226A6E2D5F5F0500AF6BE5 /* Assets.xcassets */,
+				E4226A702D5F5F0500AF6BE5 /* LaunchScreen.storyboard */,
+				E4226A732D5F5F0500AF6BE5 /* Info.plist */,
+			);
+			path = PostVault;
+			sourceTree = "<group>";
+		};
+		E4226A7B2D5F5F0600AF6BE5 /* PostVaultTests */ = {
+			isa = PBXGroup;
+			children = (
+				E4226A7C2D5F5F0600AF6BE5 /* PostVaultTests.swift */,
+				E445C7672D620E90002CC70A /* PostViewModelTests */,
+			);
+			path = PostVaultTests;
+			sourceTree = "<group>";
+		};
+		E4226A852D5F5F0600AF6BE5 /* PostVaultUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E4226A862D5F5F0600AF6BE5 /* PostVaultUITests.swift */,
+				E4226A882D5F5F0600AF6BE5 /* PostVaultUITestsLaunchTests.swift */,
+			);
+			path = PostVaultUITests;
+			sourceTree = "<group>";
+		};
+		E4226A952D5F606700AF6BE5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E4226A9A2D5F610700AF6BE5 /* Post.swift */,
+				E4226A9C2D5F611500AF6BE5 /* PostRealmModel.swift */,
+				E4FADACD2D5F813A00F4E5E3 /* Comment.swift */,
+				E4FADACF2D5F829600F4E5E3 /* CommentRealmModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E4226A962D5F606F00AF6BE5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				E4226AB02D5F634100AF6BE5 /* PostViewModel.swift */,
+				E4226AB22D5F63AB00AF6BE5 /* LoginViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		E4226A972D5F607B00AF6BE5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E4226AC42D5F680B00AF6BE5 /* TabBar */,
+				E4226ABF2D5F679E00AF6BE5 /* Favorites */,
+				E4226ABA2D5F677F00AF6BE5 /* Posts */,
+				E4226AAA2D5F622A00AF6BE5 /* LoginView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E4226A982D5F608400AF6BE5 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				E4226A9E2D5F615500AF6BE5 /* APIService.swift */,
+				E4226AA02D5F617500AF6BE5 /* DatabaseService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E4226A992D5F609000AF6BE5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E445C76A2D620ED1002CC70A /* MockDatabaseService.swift */,
+				E445C7682D620EB7002CC70A /* MockAPIService.swift */,
+				E4226AA22D5F619300AF6BE5 /* Constants.swift */,
+				E445C75C2D60C0BE002CC70A /* Extensions */,
+				E4226AB42D5F658000AF6BE5 /* UserSessionManager.swift */,
+				E445C7632D620256002CC70A /* NetworkMonitor.swift */,
+				E445C76F2D6216A7002CC70A /* MockUserSessionManager.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E4226AAA2D5F622A00AF6BE5 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				E4226AA62D5F622100AF6BE5 /* LoginViewController.swift */,
+				E4226AA72D5F622100AF6BE5 /* LoginViewController.xib */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		E4226ABA2D5F677F00AF6BE5 /* Posts */ = {
+			isa = PBXGroup;
+			children = (
+				E4226ABB2D5F679100AF6BE5 /* PostsViewController.swift */,
+				E4226ABC2D5F679100AF6BE5 /* PostsViewController.xib */,
+				E4226AC92D5F68F200AF6BE5 /* PostTableViewCell.swift */,
+				E4226ACA2D5F68F200AF6BE5 /* PostTableViewCell.xib */,
+			);
+			path = Posts;
+			sourceTree = "<group>";
+		};
+		E4226ABF2D5F679E00AF6BE5 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				E4226AC02D5F67B100AF6BE5 /* FavoritesViewController.swift */,
+				E4226AC12D5F67B100AF6BE5 /* FavoritesViewController.xib */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		E4226AC42D5F680B00AF6BE5 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E4226ACD2D5F737A00AF6BE5 /* MainTabBarController.swift */,
+				E4226ACE2D5F737A00AF6BE5 /* MainTabBarController.xib */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		E445C75C2D60C0BE002CC70A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E4226AA42D5F61A600AF6BE5 /* UIApplication+Extensions.swift */,
+				E445C75D2D60C0D9002CC70A /* UIViewController+Extension.swift */,
+				E445C75F2D61EE6C002CC70A /* UIView+Extensions.swift */,
+				E445C7612D61FFA0002CC70A /* UITableView+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E445C7672D620E90002CC70A /* PostViewModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				E445C7652D620E35002CC70A /* PostViewModelTests.swift */,
+				E445C7712D6216D5002CC70A /* LoginViewModelTests.swift */,
+			);
+			path = PostViewModelTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E4226A612D5F5F0400AF6BE5 /* PostVault */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4226A8C2D5F5F0600AF6BE5 /* Build configuration list for PBXNativeTarget "PostVault" */;
+			buildPhases = (
+				731E9C03A61ED9B8EA067DD3 /* [CP] Check Pods Manifest.lock */,
+				E4226A5E2D5F5F0400AF6BE5 /* Sources */,
+				E4226A5F2D5F5F0400AF6BE5 /* Frameworks */,
+				E4226A602D5F5F0400AF6BE5 /* Resources */,
+				05F25EC71E6DBBC4045D8AE8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PostVault;
+			productName = PostVault;
+			productReference = E4226A622D5F5F0400AF6BE5 /* PostVault.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E4226A772D5F5F0600AF6BE5 /* PostVaultTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4226A8F2D5F5F0600AF6BE5 /* Build configuration list for PBXNativeTarget "PostVaultTests" */;
+			buildPhases = (
+				ED294A2C78E145C95D8DC646 /* [CP] Check Pods Manifest.lock */,
+				E4226A742D5F5F0600AF6BE5 /* Sources */,
+				E4226A752D5F5F0600AF6BE5 /* Frameworks */,
+				E4226A762D5F5F0600AF6BE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4226A7A2D5F5F0600AF6BE5 /* PBXTargetDependency */,
+			);
+			name = PostVaultTests;
+			productName = PostVaultTests;
+			productReference = E4226A782D5F5F0600AF6BE5 /* PostVaultTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E4226A812D5F5F0600AF6BE5 /* PostVaultUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4226A922D5F5F0600AF6BE5 /* Build configuration list for PBXNativeTarget "PostVaultUITests" */;
+			buildPhases = (
+				7290A9F5CD282327F981B802 /* [CP] Check Pods Manifest.lock */,
+				E4226A7E2D5F5F0600AF6BE5 /* Sources */,
+				E4226A7F2D5F5F0600AF6BE5 /* Frameworks */,
+				E4226A802D5F5F0600AF6BE5 /* Resources */,
+				8B52C3107798EAB84789558F /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E4226A842D5F5F0600AF6BE5 /* PBXTargetDependency */,
+			);
+			name = PostVaultUITests;
+			productName = PostVaultUITests;
+			productReference = E4226A822D5F5F0600AF6BE5 /* PostVaultUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E4226A5A2D5F5F0400AF6BE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					E4226A612D5F5F0400AF6BE5 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					E4226A772D5F5F0600AF6BE5 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E4226A612D5F5F0400AF6BE5;
+					};
+					E4226A812D5F5F0600AF6BE5 = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = E4226A612D5F5F0400AF6BE5;
+					};
+				};
+			};
+			buildConfigurationList = E4226A5D2D5F5F0400AF6BE5 /* Build configuration list for PBXProject "PostVault" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E4226A592D5F5F0400AF6BE5;
+			productRefGroup = E4226A632D5F5F0400AF6BE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E4226A612D5F5F0400AF6BE5 /* PostVault */,
+				E4226A772D5F5F0600AF6BE5 /* PostVaultTests */,
+				E4226A812D5F5F0600AF6BE5 /* PostVaultUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E4226A602D5F5F0400AF6BE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4226AA82D5F622100AF6BE5 /* LoginViewController.xib in Resources */,
+				E4226A6F2D5F5F0500AF6BE5 /* Assets.xcassets in Resources */,
+				E4226ABD2D5F679100AF6BE5 /* PostsViewController.xib in Resources */,
+				E4226AC22D5F67B100AF6BE5 /* FavoritesViewController.xib in Resources */,
+				E4226A722D5F5F0500AF6BE5 /* Base in Resources */,
+				E4226A6D2D5F5F0400AF6BE5 /* Base in Resources */,
+				E4226ACF2D5F737A00AF6BE5 /* MainTabBarController.xib in Resources */,
+				E4226ACB2D5F68F200AF6BE5 /* PostTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4226A762D5F5F0600AF6BE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4226A802D5F5F0600AF6BE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		05F25EC71E6DBBC4045D8AE8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PostVault/Pods-PostVault-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PostVault/Pods-PostVault-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PostVault/Pods-PostVault-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7290A9F5CD282327F981B802 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PostVault-PostVaultUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		731E9C03A61ED9B8EA067DD3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PostVault-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B52C3107798EAB84789558F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PostVault-PostVaultUITests/Pods-PostVault-PostVaultUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PostVault-PostVaultUITests/Pods-PostVault-PostVaultUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PostVault-PostVaultUITests/Pods-PostVault-PostVaultUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ED294A2C78E145C95D8DC646 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PostVaultTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E4226A5E2D5F5F0400AF6BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4226AB52D5F658000AF6BE5 /* UserSessionManager.swift in Sources */,
+				E4226AA52D5F61A600AF6BE5 /* UIApplication+Extensions.swift in Sources */,
+				E445C7622D61FFA0002CC70A /* UITableView+Extension.swift in Sources */,
+				E445C7602D61EE6C002CC70A /* UIView+Extensions.swift in Sources */,
+				E4226ACC2D5F68F200AF6BE5 /* PostTableViewCell.swift in Sources */,
+				E4226AA12D5F617500AF6BE5 /* DatabaseService.swift in Sources */,
+				E4226A662D5F5F0400AF6BE5 /* AppDelegate.swift in Sources */,
+				E4226A9F2D5F615500AF6BE5 /* APIService.swift in Sources */,
+				E4226A9D2D5F611500AF6BE5 /* PostRealmModel.swift in Sources */,
+				E4FADACE2D5F813A00F4E5E3 /* Comment.swift in Sources */,
+				E445C75E2D60C0D9002CC70A /* UIViewController+Extension.swift in Sources */,
+				E445C7642D620256002CC70A /* NetworkMonitor.swift in Sources */,
+				E445C76D2D620F30002CC70A /* MockDatabaseService.swift in Sources */,
+				E4226A682D5F5F0400AF6BE5 /* SceneDelegate.swift in Sources */,
+				E4226ABE2D5F679200AF6BE5 /* PostsViewController.swift in Sources */,
+				E4226AC32D5F67B100AF6BE5 /* FavoritesViewController.swift in Sources */,
+				E4226A9B2D5F610700AF6BE5 /* Post.swift in Sources */,
+				E4226AB32D5F63AB00AF6BE5 /* LoginViewModel.swift in Sources */,
+				E445C76C2D620F2C002CC70A /* MockAPIService.swift in Sources */,
+				E4226AA92D5F622100AF6BE5 /* LoginViewController.swift in Sources */,
+				E4226AA32D5F619300AF6BE5 /* Constants.swift in Sources */,
+				E4226AB12D5F634100AF6BE5 /* PostViewModel.swift in Sources */,
+				E4FADAD02D5F829600F4E5E3 /* CommentRealmModel.swift in Sources */,
+				E4226AD02D5F737A00AF6BE5 /* MainTabBarController.swift in Sources */,
+				E445C7702D6216A7002CC70A /* MockUserSessionManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4226A742D5F5F0600AF6BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E445C7722D6216D5002CC70A /* LoginViewModelTests.swift in Sources */,
+				E445C7662D620E35002CC70A /* PostViewModelTests.swift in Sources */,
+				E4226A7D2D5F5F0600AF6BE5 /* PostVaultTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4226A7E2D5F5F0600AF6BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4226A872D5F5F0600AF6BE5 /* PostVaultUITests.swift in Sources */,
+				E4226A892D5F5F0600AF6BE5 /* PostVaultUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4226A7A2D5F5F0600AF6BE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4226A612D5F5F0400AF6BE5 /* PostVault */;
+			targetProxy = E4226A792D5F5F0600AF6BE5 /* PBXContainerItemProxy */;
+		};
+		E4226A842D5F5F0600AF6BE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4226A612D5F5F0400AF6BE5 /* PostVault */;
+			targetProxy = E4226A832D5F5F0600AF6BE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E4226A6B2D5F5F0400AF6BE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4226A6C2D5F5F0400AF6BE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E4226A702D5F5F0500AF6BE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E4226A712D5F5F0500AF6BE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E4226A8A2D5F5F0600AF6BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E4226A8B2D5F5F0600AF6BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E4226A8D2D5F5F0600AF6BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2C5EABAEBAE9BDF7A28153D /* Pods-PostVault.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PostVault/PostVault.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6W7GX8W6GQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PostVault/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PostVault;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LoginViewController.xib;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dishant.apple.PostVault;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		E4226A8E2D5F5F0600AF6BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C31201AE3F6037FBDBFBA934 /* Pods-PostVault.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PostVault/PostVault.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6W7GX8W6GQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PostVault/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PostVault;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LoginViewController.xib;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dishant.apple.PostVault;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		E4226A902D5F5F0600AF6BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0DD4119647FD0E5F24A47977 /* Pods-PostVaultTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dishant.apple.PostVaultTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PostVault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PostVault";
+			};
+			name = Debug;
+		};
+		E4226A912D5F5F0600AF6BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5364576C0FD8EFF13412708 /* Pods-PostVaultTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dishant.apple.PostVaultTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PostVault.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PostVault";
+			};
+			name = Release;
+		};
+		E4226A932D5F5F0600AF6BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAE4D1F1BD0B385FC4DF163C /* Pods-PostVault-PostVaultUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dishant.apple.PostVaultUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = PostVault;
+			};
+			name = Debug;
+		};
+		E4226A942D5F5F0600AF6BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F59FCB41DD586DC232E1EF3F /* Pods-PostVault-PostVaultUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dishant.apple.PostVaultUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_TARGET_NAME = PostVault;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E4226A5D2D5F5F0400AF6BE5 /* Build configuration list for PBXProject "PostVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4226A8A2D5F5F0600AF6BE5 /* Debug */,
+				E4226A8B2D5F5F0600AF6BE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4226A8C2D5F5F0600AF6BE5 /* Build configuration list for PBXNativeTarget "PostVault" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4226A8D2D5F5F0600AF6BE5 /* Debug */,
+				E4226A8E2D5F5F0600AF6BE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4226A8F2D5F5F0600AF6BE5 /* Build configuration list for PBXNativeTarget "PostVaultTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4226A902D5F5F0600AF6BE5 /* Debug */,
+				E4226A912D5F5F0600AF6BE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4226A922D5F5F0600AF6BE5 /* Build configuration list for PBXNativeTarget "PostVaultUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4226A932D5F5F0600AF6BE5 /* Debug */,
+				E4226A942D5F5F0600AF6BE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E4226A5A2D5F5F0400AF6BE5 /* Project object */;
+}
