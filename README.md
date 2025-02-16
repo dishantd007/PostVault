@@ -61,6 +61,27 @@ The app consists of two screens:
 ---
 
 ## Screenshots
+![Login](https://github.com/user-attachments/assets/96a62964-37a6-4743-a67d-ea250b9d7918)
+
+
+![LoginFilled](https://github.com/user-attachments/assets/c11850f7-9a15-4025-9c5d-a087f945c6c3)
+
+
+![Post](https://github.com/user-attachments/assets/00660911-2c27-4a23-bb70-989e3fc9a339)
+
+
+![PostLiked](https://github.com/user-attachments/assets/44ff504a-b109-4e23-beb0-44cefc89289d)
+
+
+![FavoritePost](https://github.com/user-attachments/assets/58adc660-7d80-407d-9f54-1b6aa67d1eea)
+
+
+![Delete](https://github.com/user-attachments/assets/55fbe1a3-396b-4d72-980a-48efca8babb7)
+
+
+![Comment](https://github.com/user-attachments/assets/e3a18ef2-cc63-453c-8c39-02d48358db06)
+
+
 
 
 ---
@@ -73,4 +94,3 @@ The app consists of two screens:
 5. **Logout:** Clear cached login and return to the login screen.
 
 ---
-
