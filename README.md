@@ -72,8 +72,6 @@ c7cf-c
 ![Simulator Screenshot - iPhone 15 - 2025-02-16 at 20 14 23](https://github.com/user-attachments/assets/87c018e5-42ca-4979-a5eb-8d064d0b78dd)
 ssets/17f5e359-06bb-49e2-950d-5a644809aa3c)
 
-
-
 ---
 
 ## How to Use
