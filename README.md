@@ -61,14 +61,18 @@ The app consists of two screens:
 ---
 
 ## Screenshots
-![Simulator Screenshot - iPhone 15 - 2025-02-16 at 17 17 52](https://github.com/user-attachments/assets/b9c7340e-e6fe-4b17-be5f-2a7ef07d1369)
-![Simulator Screenshot - iPhone 15 - 2025-02-16 at 17 17 43](https://github.com/user-attachments/assets/b51a89ef-9a09-4623-bb89-76fd111768e8)
-![Simulator Screenshot - iPhone 15 - 2025-02-16 at 17 17 29](https://github.com/user-attachments/assets/d3b75ede-d218-4dc9-9bb5-69c071e20c96)
-![Simulator Screenshot - iPhone 15 - 2025-02-16 at 16 14 33](https://github.com/user-attachments/assets/cc50e89b-6acd-4eea-999d-12a794f7c747)
-![Simulator Screenshot - iPhone 15 - 2025-02-16 at 16 14 01](https://github.com/user-attachments/assets/f27cd7cc-0f42-411e-9cd1-2ead1106a6cb)
-![Simulator Screenshot - iPhone 15 - 2025-02-15 at 07 57 40](https://github.com/user-attachments/assets/57b6e0a2-536f-42d6-9488-bd2ce6069dc1)
-![Simulator Screenshot - iPhone 15 - 2025-02-16 at 17 18 19](https://github.com/user-attachments/assets/75607f9f-5862-45f6-965e-7b9ffb46293c)
-![Simulator Screenshot - iPhone 15 - 2025-02-16 at 17 18 03](https://github.com/user-attachments/assets/d1cb1366-a8b5-4ca8-918b-c37ae7c7b6b0)
+![Simulator Screenshot - iPhone 15 - 2025-02-16 at 20 12 41](https://github.com/user-attachments/assets/ee72b7c4-2250-4ace-b315-bf2f8be69a49)
+![Simulator Screenshot - iPhone 15 - 2025-02-16 at 20 13 30](https://github.com/user-attachments/assets/dcc5
+![Simulator Screenshot - iPhone 15 - 2025-02-16 at 20 13 37](https://github.com/user-attachments/assets/2b58aaa8-b13e-4598-b40e-9e5729ab6e39)
+c7cf-c
+![Simulator Screenshot - iPhone 15 - 2025-02-16 at 20 13 50](https://github.com/user-attachments/assets/09015655-93dc-4323-8c98-fa9b4e50bb8e)
+5f0-4797-8695-8228a17b1a3b)
+![Simulator Screenshot - iPhone 15 - 2025-02-16 at 20 13 58](https://github.com/user-attachments/assets/a8b00a55-9cbe-4f23-a0d3-78069ded1d20)
+![Simulator Screenshot - iPhone 15 - 2025-02-16 at 20 14 07](https://github.com/user-attachments/a
+![Simulator Screenshot - iPhone 15 - 2025-02-16 at 20 14 23](https://github.com/user-attachments/assets/87c018e5-42ca-4979-a5eb-8d064d0b78dd)
+ssets/17f5e359-06bb-49e2-950d-5a644809aa3c)
+
+
 
 ---
 
