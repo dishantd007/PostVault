@@ -11,7 +11,6 @@
 		8FEDC934E579F22AAAC654EA /* Pods_PostVaultTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 701B60CA551B051AD9761386 /* Pods_PostVaultTests.framework */; };
 		E4226A662D5F5F0400AF6BE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226A652D5F5F0400AF6BE5 /* AppDelegate.swift */; };
 		E4226A682D5F5F0400AF6BE5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226A672D5F5F0400AF6BE5 /* SceneDelegate.swift */; };
-		E4226A6D2D5F5F0400AF6BE5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E4226A6C2D5F5F0400AF6BE5 /* Base */; };
 		E4226A6F2D5F5F0500AF6BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E4226A6E2D5F5F0500AF6BE5 /* Assets.xcassets */; };
 		E4226A722D5F5F0500AF6BE5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E4226A712D5F5F0500AF6BE5 /* Base */; };
 		E4226A7D2D5F5F0600AF6BE5 /* PostVaultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4226A7C2D5F5F0600AF6BE5 /* PostVaultTests.swift */; };
@@ -76,7 +75,6 @@
 		E4226A622D5F5F0400AF6BE5 /* PostVault.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PostVault.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4226A652D5F5F0400AF6BE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E4226A672D5F5F0400AF6BE5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E4226A6C2D5F5F0400AF6BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E4226A6E2D5F5F0500AF6BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E4226A712D5F5F0500AF6BE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E4226A732D5F5F0500AF6BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -206,7 +204,6 @@
 				E4226A992D5F609000AF6BE5 /* Utils */,
 				E4226A652D5F5F0400AF6BE5 /* AppDelegate.swift */,
 				E4226A672D5F5F0400AF6BE5 /* SceneDelegate.swift */,
-				E4226A6B2D5F5F0400AF6BE5 /* Main.storyboard */,
 				E4226A6E2D5F5F0500AF6BE5 /* Assets.xcassets */,
 				E4226A702D5F5F0500AF6BE5 /* LaunchScreen.storyboard */,
 				E4226A732D5F5F0500AF6BE5 /* Info.plist */,
@@ -458,7 +455,6 @@
 				E4226ABD2D5F679100AF6BE5 /* PostsViewController.xib in Resources */,
 				E4226AC22D5F67B100AF6BE5 /* FavoritesViewController.xib in Resources */,
 				E4226A722D5F5F0500AF6BE5 /* Base in Resources */,
-				E4226A6D2D5F5F0400AF6BE5 /* Base in Resources */,
 				E4226ACF2D5F737A00AF6BE5 /* MainTabBarController.xib in Resources */,
 				E4226ACB2D5F68F200AF6BE5 /* PostTableViewCell.xib in Resources */,
 			);
@@ -651,14 +647,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E4226A6B2D5F5F0400AF6BE5 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E4226A6C2D5F5F0400AF6BE5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E4226A702D5F5F0500AF6BE5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -804,7 +792,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = PostVault;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LoginViewController.xib;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -839,7 +826,6 @@
 				INFOPLIST_KEY_CFBundleDisplayName = PostVault;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LoginViewController.xib;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
