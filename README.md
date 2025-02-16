@@ -62,6 +62,10 @@ The app consists of two screens:
 
 ## Screenshots
 ![Simulator Screenshot - iPhone 15 - 2025-02-16 at 20 12 41](https://github.com/user-attachments/assets/ee72b7c4-2250-4ace-b315-bf2f8be69a49)
+
+![Simulator Screenshot - iPhone 15 - 2025-02-16 at 20 13 30](https://github.com/user-attachments/assets/274b9788-7ff5-4de7-a7ff-92b8447ecef5)
+
+
 ![Simulator Screenshot - iPhone 15 - 2025-02-16 at 20 13 30](https://github.com/user-attachments/assets/dcc5
 ![Simulator Screenshot - iPhone 15 - 2025-02-16 at 20 13 37](https://github.com/user-attachments/assets/2b58aaa8-b13e-4598-b40e-9e5729ab6e39)
 c7cf-c
